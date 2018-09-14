@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oa4-qa-EOG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="79X-ad-L3J">
+            <objects>
+                <viewController id="Oa4-qa-EOG" customClass="ViewController" customModule="AppAuth_Example_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dx2-0X-g3S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="0Fq-dx-VzJ">
+                                <rect key="frame" x="6" y="6" width="363" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTO-I3-vPa">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                        <state key="normal" title="authWithAutoCodeExchange"/>
+                                        <connections>
+                                            <action selector="authWithAutoCodeExchange:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="Pqa-74-vpi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-EI-vvB">
+                                        <rect key="frame" x="0.0" y="34" width="154" height="30"/>
+                                        <state key="normal" title="authNoCodeExchange"/>
+                                        <connections>
+                                            <action selector="authNoCodeExchange:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="JjN-d1-n2w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04w-mS-ZeI">
+                                        <rect key="frame" x="0.0" y="68" width="101" height="30"/>
+                                        <state key="normal" title="codeExchange"/>
+                                        <connections>
+                                            <action selector="codeExchange:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="I7x-wS-uVG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVo-Gc-OtX">
+                                        <rect key="frame" x="0.0" y="102" width="101" height="30"/>
+                                        <state key="normal" title="clearAuthState"/>
+                                        <connections>
+                                            <action selector="clearAuthState:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="Xkg-Qq-uQX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dof-aL-w3E">
+                                        <rect key="frame" x="0.0" y="136" width="60" height="30"/>
+                                        <state key="normal" title="clearLog"/>
+                                        <connections>
+                                            <action selector="clearLog:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="Dvo-Y8-Hca"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yl-Bu-VjO">
+                                        <rect key="frame" x="0.0" y="170" width="56" height="30"/>
+                                        <state key="normal" title="userinfo"/>
+                                        <connections>
+                                            <action selector="userInfo:" destination="Oa4-qa-EOG" eventType="touchUpInside" id="N7K-0N-j6U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2x1-4s-cip"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i6Z-BH-izU">
+                                <rect key="frame" x="6" y="214" width="363" height="447"/>
+                                <color key="backgroundColor" red="0.15090603299999999" green="0.74481879340000001" blue="0.78773328990000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="493-bD-FDp" firstAttribute="trailing" secondItem="i6Z-BH-izU" secondAttribute="trailing" constant="6" id="A39-gI-EIr"/>
+                            <constraint firstItem="i6Z-BH-izU" firstAttribute="top" secondItem="0Fq-dx-VzJ" secondAttribute="bottom" constant="8" id="Ec9-vE-k0N"/>
+                            <constraint firstItem="0Fq-dx-VzJ" firstAttribute="leading" secondItem="493-bD-FDp" secondAttribute="leading" constant="6" id="H8r-Jy-qFY"/>
+                            <constraint firstItem="493-bD-FDp" firstAttribute="bottom" secondItem="i6Z-BH-izU" secondAttribute="bottom" constant="6" id="Oqc-0h-ymZ"/>
+                            <constraint firstItem="0Fq-dx-VzJ" firstAttribute="top" secondItem="Dx2-0X-g3S" secondAttribute="top" constant="6" id="VrB-1k-9Tz"/>
+                            <constraint firstItem="i6Z-BH-izU" firstAttribute="leading" secondItem="493-bD-FDp" secondAttribute="leading" constant="6" id="i1J-DD-UUB"/>
+                            <constraint firstItem="493-bD-FDp" firstAttribute="trailing" secondItem="0Fq-dx-VzJ" secondAttribute="trailing" constant="6" id="u27-kh-xWP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="493-bD-FDp"/>
+                    </view>
+                    <connections>
+                        <outlet property="logTextField" destination="i6Z-BH-izU" id="kZQ-cn-baX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4N-Ih-8j4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="-114"/>
+        </scene>
+    </scenes>
+</document>
